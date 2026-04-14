@@ -1,0 +1,62 @@
+Factory reset trước
+--> OK
+
+Kiểm tra địa chỉ và baudrate bằng USB-TTL
+FF 03 00 64 00 02 90 0A (CRC = 0x0A90)
+--> {01}{03}{04}{00}{01}{00}{03}{EB}{F2} --> Data: {00}{01}{00}{03} --> Địa chỉ 0x01 và baudrate là 9600
+
+Kiểm tra địa chỉ và baudrate bằng Chương trình Scan infor
+=== FOUND DEVICE ===
+Address: 1
+Baudrate: 9600
+Reading Speed...
+
+Kiểm tra địa chỉ và baudrate bằng Chương trình Config
+=== FOUND DEVICE ===
+Address: 1
+Baudrate: 9600
+Nhap dia chi moi (1-247) roi nhan ENTER:
+
+Chạy chương trình Factory Reset --> OK
+Kiểm tra địa chỉ và baudrate bằng USB-TTL
+FF 03 00 64 00 02 90 0A (CRC = 0x0A90)
+--> {01}{03}{04}{00}{01}{00}{03}{EB}{F2} --> Data: {00}{01}{00}{03} --> Địa chỉ 0x01 và baudrate 9600
+
+Kiểm tra địa chỉ và baudrate bằng Chương trình Scan infor
+=== FOUND DEVICE ===
+Address: 1
+Baudrate: 9600
+Reading Speed...
+====================
+Chạy chương trình Config: địa chỉ 0x21, baudrate 4800
+Kiểm tra địa chỉ và baudrate bằng Chương trình Config
+=== FOUND DEVICE ===
+Address: 21
+Baudrate: 4800
+Nhap dia chi moi (1-247) roi nhan ENTER:
+
+Kiểm tra địa chỉ và baudrate bằng Chương trình Scan infor
+=== FOUND DEVICE ===
+Address: 21
+Baudrate: 4800
+Reading Speed...
+
+Kiểm tra địa chỉ và baudrate bằng USB-TTL
+FF 03 00 64 00 02 90 0A (CRC = 0x0A90)
+--> {15}{03}{04}{00}{15}{00}{02}{3E}{37} --> Data: {00}{15}{00}{02} --> Địa chỉ là 0x15 và baudrate là 4800
+
+Nếu Setup địa chỉ 0x21 và baudrate 4800 bằng USB-TTL, nội dung sẽ là: (sửa lại 0x15)
+15 10 00 64 00 03 00 21 00 02 00 00 49 34 (CRC = 0x3449)
+--> {15}{10}{00}{64}{00}{03}{00}{21}{00}{02}{00}{00}{49}{34}
+
+Kiểm tra địa chỉ và baudrate bằng USB-TTL
+FF 03 00 64 00 02 90 0A (CRC = 0x0A90)
+--> {21}{03}{04}{00}{21}{00}{02}{0A}{3A} --> Data: {00}{21}{00}{02} --> Địa chỉ là 0x21 và baudrate là 4800
+
+Kiểm tra địa chỉ và baudrate bằng Chương trình Scan infor
+=== FOUND DEVICE ===
+Address: 33
+Baudrate: 4800
+Reading Speed...
+====================
+01 10 00 64 00 03 00 21 00 02 00 00
