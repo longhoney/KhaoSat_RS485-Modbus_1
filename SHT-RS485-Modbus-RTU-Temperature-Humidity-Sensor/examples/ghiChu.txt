@@ -1,0 +1,12 @@
+======== Chương trình 1_Simple_Data_Reading ========
+1. Mỗi khi thay đổi giá trị, cần tắt nguồn và bật nguồn lại cảm biến.
+2. Sau khi thay đổi địa chỉ, phải nhập lại giá trị mới trong lệnh SHT demo(__,__,BAUD_XXXX,YYYY)
+3. Sau khi thay đổi baudrate, phải nhập lại giá trị mới trong lệnh "demo.begin(__00);". Baudrate trong lệnh "SHT demo()" không cần thay đổi.
+
+======== Chương trình 2_Simple_Installation ========
+1. Mỗi khi thay đổi giá trị, cần tắt nguồn và bật nguồn lại cảm biến.
+2. Tính năng Init baudrate: dò baudrate. Ví dụ: Init Baudrate = 2400. Nếu nhập lệnh kiểm tra địa chỉ mà cảm biến phản hồi, tức baudrate hiện tại là 2400.
+3. Không cần thay đổi địa chỉ và baudrate trong lệnh "SHT demo()" và lệnh "demo.begin(__00);"
+4. Mỗi khi nhập lệnh thay đổi địa chỉ và baudrate, chỉ cần init baudrate lại đúng giá trị đã cài đặt (2400/4800/9600) thì sẽ dò được địa chỉ (1-254).
+
+0X8, 9600

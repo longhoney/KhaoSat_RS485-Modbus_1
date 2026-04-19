@@ -2,4 +2,6 @@
 
 >Library SHT RS485 Modbus-RTU Temperature Humidity Sensor for **Arduino**.
 
+Tác giả gốc: TrungKuro
+
 SHT40, DHT11 đọc dữ liệu và cập nhật giá trị độ ẩm nhanh, nhưng giá trị nhiệt độ cập nhật rất chậm.

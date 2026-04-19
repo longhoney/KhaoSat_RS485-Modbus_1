@@ -15,7 +15,7 @@
 #define TX_SHT 3
 
 /* Using with SoftwareSerial, default (RX=2) and (TX=3) */
-SHT demo(RX_SHT, TX_SHT, BAUD_4800, 0x01);
+SHT demo(RX_SHT, TX_SHT, BAUD_4800, 0X01);
 
 /* Using with HardwareSerial, default (RX=0) and (TX=1) */
 // SHT demo(BAUD_4800, 0x01);
@@ -28,7 +28,7 @@ void setup()
   Serial.begin(115200);
   Serial.println(F("Start reading SHT Modbus (HSHOP)"));
 
-  demo.begin(4800);
+  demo.begin(9600);
 
   /* ----------------------- Test with HardwareSerial ---------------------- */
   // Serial.begin(4800);
