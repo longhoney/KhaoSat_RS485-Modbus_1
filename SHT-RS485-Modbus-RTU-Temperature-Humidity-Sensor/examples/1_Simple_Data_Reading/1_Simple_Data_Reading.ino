@@ -28,7 +28,7 @@ void setup()
   Serial.begin(115200);
   Serial.println(F("Start reading SHT Modbus (HSHOP)"));
 
-  demo.begin(9600);
+  demo.begin(4800);
 
   /* ----------------------- Test with HardwareSerial ---------------------- */
   // Serial.begin(4800);
